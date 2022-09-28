@@ -9,12 +9,12 @@ namespace Lab.Demo.EF1.Data
     public partial class Employees
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employees()
-        {
-            Employees1 = new HashSet<Employees>();
-            Orders = new HashSet<Orders>();
-            Territories = new HashSet<Territories>();
-        }
+        //public Employees()
+        //{
+        //    Employees1 = new HashSet<Employees>();
+        //    Orders = new HashSet<Orders>();
+        //    var Territories = new HashSet<Territories>();
+        //}
 
         [Key]
         public int EmployeeID { get; set; }
@@ -77,7 +77,7 @@ namespace Lab.Demo.EF1.Data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Orders> Orders { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Territories> Territories { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<Territories> Territories { get; set; }
     }
 }
