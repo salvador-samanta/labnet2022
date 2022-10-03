@@ -36,7 +36,7 @@ namespace Lab.EF.Linq
                         "                        \"11. Query para devolver las distintas categorías asociadas a los productos.\r\n" +
                         "                        \"12. Query para devolver el primer elemento de una lista de productos.");
 
-                    menu = Convert.ToInt32(Console.ReadLine());
+                    menu = int.Parse(Console.ReadLine());
                     Model model = new Model();
 
                     switch (menu)
