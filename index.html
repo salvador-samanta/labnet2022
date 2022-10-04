@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <title>Formulario Lab</title>
+    <link rel ="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <form action = "" class = "formulario" id = "formulario" style="width: 95%;">
+
+            <h1>Formulario</h1>
+            
+			<div class="formularioTexto">
+                <p class="formularioTexto" id="formularioTexto"><b>Completá tus datos.</b></p>
+			</div>
+			<div class="formularioTexto2">
+                <p class="formularioTexto2" id="formularioTexto2">Información personal:</p>
+            </div>
+            <!--Grupo: Nombre-->
+            <div class = "formularioGrupo" id = "grupoNombre">
+                <label for ="nombre" class = "formularioLabel">Nombre:</label>
+                <div class = "formularioGrupoInput">
+                    <input type = "text" class = "formularioInput" name = "nombre" id = "nombre" placeholder = "Ejempnesto">
+                    
+                </div>
+                <p class = "formularioInputError">El nombre de usuario debe contener entre 4 a 16 dígitos.</p>
+            </div>
+
+            <!--Grupo: Apellido-->
+            <div class = "formularioGrupo" id = "grupoApellido">
+                <label for ="apellido" class = "formularioLabel">Apellido:</label>
+                <div class = "formularioGrupoInput">
+                    <input type = "text" class = "formularioInput" name = "apellido" id = "apellido" placeholder = "Ejemplonzález">
+                    
+                </div>
+                <p class = "formularioInputError">El nombre de usuario debe contener entre 4 a 16 dígitos.</p>
+            </div>
+
+            <!--Grupo: Edad -->
+            <div class = "formularioGrupo" id = "grupoEdad">
+                <label for ="contrasenia" class = "formularioLabel">Edad:</label>
+                <div class = "formularioGrupoInput">
+                    <input type = "number" class = "formularioInput" name = "edad" id = "edad" placeholder = "84" style="width: 95%">
+                    
+                </div>
+                <p class = "formularioInputError">La edad debe ser numérica.</p>
+            </div>
+
+
+            <!--Grupo: E-mail -->
+            <div class = "formularioGrupo" id = "grupoCorreo">
+                <label for ="correo" class = "formularioLabel">Correo electrónico:</label>
+                <div class = "formularioGrupoInput">
+                    <input type = "email" class = "formularioInput" name = "correo" id = "correo" placeholder = "ejemplazo@ej.com" >
+                    
+                </div>
+                <p class = "formularioInputError">El correo debe contener @ y .</p>
+            </div>            
+        
+
+            <!--Grupo: Género -->
+            <div class = "formularioGrupo" id = "grupoGenero">
+					<p>Indicá tu identidad de género:</p>
+                    
+                    <input class = "formularioCheckbox" type = "checkbox" id = "genero" name = "genero" value = "femenino">
+                    <label class="formularioLabel2">Femenino</label>
+					<input class = "formularioCheckbox" type = "checkbox" id = "genero" name = "genero" value = "masculino">
+                    <label class="formularioLabel2">Masculino</label>
+                    <input class = "formularioCheckbox" type = "checkbox" id = "genero" name = "genero" value = "otros">
+                    <label class="formularioLabel3"></label>Otro</label>
+
+            </div>
+
+            <!--Grupo: Empresa -->
+            
+            <div class="formularioTexto2">
+                <p class="formularioTexto2" id="formularioTexto2">Información adicional:</p>
+            </div>
+            <div class = "formularioGrupo" id = "grupoEmpresa">
+                <label for ="empresa" class = "formularioLabel">Empresa:</label>
+                <div class = "formularioGrupoInput">
+                    <input type = "email" class = "formularioInput" name = "correo" id = "correo" placeholder = "ejemplo s.a." >
+                    
+                </div>
+                <p>I</p>
+                <p class = "formularioInputError">El nombre de la empresa puede contener letras, números y los signos _.+-</p>
+            </div> 
+
+            <p></p>
+            <div class="formularioGrupo formularioGrupoBtnEnviar">
+                <button type="submit" class="formularioBtn">Enviar</button>
+                <button type="reset" class="formularioBtn">Borrar</button>
+            </div>
+
+            
+        </form>
+    </main>
+
+    <script src="js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin = "anonymous"></script>
+</body>
+</html>

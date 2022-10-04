@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #f6ffd5;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+
+.formularioTexto{
+	font-size: 22px;
+}
+.formularioTexto2{
+	font-size: 18px;
+	grid-column: span 2;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formularioLabel{
+	display: block;
+	font-weight: 700;
+	padding: 18px
+}
+
+.formularioGrupoInput{
+	position: relative;
+	
+}
+
+.formularioInput{
+	width: 95%;
+	background: rgb(250, 205, 121);
+	border:2px rgb(5, 5, 5);
+	border-radius: 5px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3 ease all;
+}
+
+.formularioInput:focus {
+	border: 3px solid #0075ff;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163);
+}
+
+.formularioInputError{
+	font-size: 12px;
+	margin-bottom:0%;
+	display: none;
+}
+
+.formularioInputErrorActivo{
+	display: block;
+}
+
+.formularioValidacionEstado{
+	position: absolute;
+	right: 18px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	/* opacity: 0; */
+}
+
+.formularioCheckbox{
+	margin-right: 10px;
+}
+
+.formularioGrupoTerminos,
+.formularioMensaje{
+	grid-column: span 2;
+}
+
+.formularioMensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66868;
+	padding: o 15px;
+	border-radius:3px;
+	display: none;
+}
+
+.formularioMensajeActivo {
+	display: block;
+}
+.formularioMensaje p {
+	margin: 0;
+}
+
+
+
+.formularioBtn{
+	height: 45px;
+	margin: 35px;
+	line-height: 35px;
+	width: 30%;
+	background: rgb(238, 134, 134);
+	color: rgb(15, 0, 0);
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .1s ease all;
+
+}
+
+.formularioGrupoBtn {
+	/* display: flex; */
+	/* flex-direction: column; */
+	align-items: center;
+} 
+
+
+
+.formularioBtn:hover{
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formularioMensajeExito{
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formularioMensajeExitoActivado{
+	display: block;
+}
+
+
+/*Validacion*/
+.formularioGrupo-correcto .formularioValidacion-estado {
+	border-color: #1ed12d;
+	opacity: 1;
+}
+
+.formularioGrupo-incorrecto .formularioLabel {
+	color: #bb2929;
+}
+
+.formularioGrupo-incorrecto .formularioValidacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formularioGrupo-incorrecto .formularioInput {
+	border: 3px solid #bb2929;
+}
+
+/*Mediaqueries REVISAR*/
+/* @media screen and (max-width: 600px) {
+	.formulario{
+		grid: 1fr;
+	}
+
+	.formularioTexto{
+		font-size: 22px;
+		grid-column: 1;
+		align-items: center;
+	}
+	.formularioTexto2{
+		font-size: 18px;
+		grid-column: 1;
+		align-items: center;
+	}
+
+
+	.formularioGrupoTerminos,
+	.formularioMensaje,
+	.formularioGrupoBtnEnviar {
+		grid-column: 1;
+		align-items: center;
+	}
+
+	.formBtn {
+		width: 100%;
+	}
+} */
