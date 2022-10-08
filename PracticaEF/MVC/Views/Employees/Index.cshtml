@@ -1,0 +1,38 @@
+﻿@model List<MVC.Models.EmployeesView>
+
+@{ 
+    ViewBag.Title = "Employees page";
+}
+<h1>Empleados</h1>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Puesto</th>
+            <th scope="col" class="text-center">Dar baja</th>
+            <th scope="col" class="text-center">Promover</th>
+        </tr>
+    </thead>
+   <tbody>
+    @foreach (var employees in Model)
+    {
+        <tr>
+            <th scope="row">@employees.Id</th>
+            <td>@employees.Nombre</td>
+            <td>@employees.Apellido</td>
+            <td>@employees.Puesto</td>
+            <td class="text-center">@Html.ActionLink( " ", "Delete", new { id = employees.Id }, new { onclick = "return confirm ('Confirmar cambios')", @class = "fa-regular fa-trash-can btn btn-danger" })</td>
+            <td class="text-center">@Html.ActionLink(" ", "Update", new { id = employees.Id }, new {@class = "fa-solid fa-pen-to-square btn btn-warning" } )</td>
+        </tr>
+     } 
+   </tbody>
+
+     
+</table>
+
+<div>
+    @Html.ActionLink("Dar de alta un empleado", "Insert", null ,  new { @class = "btn btn-primary" })
+</div>
