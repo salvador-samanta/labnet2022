@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaEF.UI", "PracticaEF.UI\PracticaEF.UI.csproj", "{0696D188-18DE-4803-A289-C6DD0E7D70C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticasBF.Logic", "PracticasBF.Logic\PracticasBF.Logic.csproj", "{951E5C39-2AC9-4D6A-8872-41FD37E7241A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaBF.Data", "PracticaBF.Data\PracticaBF.Data.csproj", "{206EBA22-3961-417A-BF4B-0BA534E2730A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaBF.Entities", "PracticaBF.Entities\PracticaBF.Entities.csproj", "{CDD665F5-508C-45DD-AB7B-253B87433B9B}"
+EndProject
+<<<<<<< Updated upstream
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{2B8272B3-9AA3-4EFA-8204-06D8FFD00FBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{9BA882D0-BEE6-4572-A645-287E558C0BE8}"
+EndProject
+>>>>>>> Stashed changes
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0696D188-18DE-4803-A289-C6DD0E7D70C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0696D188-18DE-4803-A289-C6DD0E7D70C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0696D188-18DE-4803-A289-C6DD0E7D70C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0696D188-18DE-4803-A289-C6DD0E7D70C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951E5C39-2AC9-4D6A-8872-41FD37E7241A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951E5C39-2AC9-4D6A-8872-41FD37E7241A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951E5C39-2AC9-4D6A-8872-41FD37E7241A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951E5C39-2AC9-4D6A-8872-41FD37E7241A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206EBA22-3961-417A-BF4B-0BA534E2730A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206EBA22-3961-417A-BF4B-0BA534E2730A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206EBA22-3961-417A-BF4B-0BA534E2730A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206EBA22-3961-417A-BF4B-0BA534E2730A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD665F5-508C-45DD-AB7B-253B87433B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD665F5-508C-45DD-AB7B-253B87433B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD665F5-508C-45DD-AB7B-253B87433B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD665F5-508C-45DD-AB7B-253B87433B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
+=======
+		{2B8272B3-9AA3-4EFA-8204-06D8FFD00FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8272B3-9AA3-4EFA-8204-06D8FFD00FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8272B3-9AA3-4EFA-8204-06D8FFD00FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8272B3-9AA3-4EFA-8204-06D8FFD00FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA882D0-BEE6-4572-A645-287E558C0BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA882D0-BEE6-4572-A645-287E558C0BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA882D0-BEE6-4572-A645-287E558C0BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA882D0-BEE6-4572-A645-287E558C0BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> Stashed changes
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF9F960A-33B2-4727-B4C0-9B66B7960F91}
+	EndGlobalSection
+EndGlobal
