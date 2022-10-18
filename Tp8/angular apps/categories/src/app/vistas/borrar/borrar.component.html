@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<div class="container">
+    <h1>Borrar categoría</h1>
+    <form [formGroup]="borrarCategory">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Id</label>
+            <input type="text" class="form-control" placeholder="Id" formControlName="id">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control" placeholder="Name" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Description</label>
+            <input type="text" class="form-control" placeholder="Description" formControlName="description" >
+        <br><br>
+        <button type="submit" class="btn btn-primary margen-btn" [disabled]="borrarCategory.valid">Delete</button>
+        
+        </div>
+    </form>
+</div>
+

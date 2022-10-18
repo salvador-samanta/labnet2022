@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="container">
+    <h1>Modificar categoría</h1>
+    <form [formGroup]="editarCategory" (ngSubmit)="postForm(editarCategory.value)">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Id</label>
+            <input type="text" class="form-control" placeholder="Id" formControlName="id" readonly>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="text" class="form-control" placeholder="Name" formControlName="name" >
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Description</label>
+            <input type="text" class="form-control" placeholder="Description" formControlName="description" >
+        <br><br>
+        <button type="submit" class="btn btn-primary margen-btn" [disabled]="editarCategory.valid">Guardar cambios</button>
+        
+        <button type="button" class="btn btn-secondary" (click)="linkLista()">Volver</button>
+        </div>
+    </form>
+</div>
+
